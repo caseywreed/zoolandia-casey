@@ -2,11 +2,24 @@ using System;
 
 namespace Zoolandia
 {
-    public class CapraAegagrusHircus : Animal
+    public class Goat : Animal
     {
-        public CapraAegagrusHircus ()
+        public Goat ()
         {
             this.name = "Gilbert";
+        }
+        public Goat (string name)
+        {
+            this.name = name;
+        }
+        public Goat (int weight)
+        {
+            this.weightInLbs = weight;
+        }
+        public Goat (string name, int weight)
+        {
+            this.name = name;
+            this.weightInLbs = weight;
         }
         public int numberOfHorns {get; set;}
         public bool hasGoatAgility {get; set;}

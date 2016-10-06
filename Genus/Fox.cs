@@ -2,11 +2,24 @@ using System;
 
 namespace Zoolandia
 {
-    public class VulpesVulpes : Animal
+    public class Fox : Animal
     {
-        public VulpesVulpes ()
+        public Fox ()
         {
             this.name = "The Knox Fox";
+        }
+        public Fox (string name)
+        {
+            this.name = name;
+        }
+        public Fox (int weight)
+        {
+            this.weightInLbs = weight;
+        }
+        public Fox (string name, int weight)
+        {
+            this.name = name;
+            this.weightInLbs = weight;
         }
         public string foxColor {get; set;}
 

@@ -6,19 +6,16 @@ namespace Zoolandia
     {
         public static void Main(string[] args)
         {
-            Animal catInstance = new FelisCatus()
+            Animal catInstance = new Cat("Rosalita", 10)
             {
-                weightInLbs = 12,
                 declawed = true
             };
-            Animal foxInstance = new VulpesVulpes()
+            Animal foxInstance = new Fox("The Knoxiest Foxiest", 20)
             {
-                weightInLbs = 25,
                 foxColor = "red"
             };
-            Animal goatInstance = new CapraAegagrusHircus()
+            Animal goatInstance = new Goat("Gilbert The Super Goat", 15)
             {
-                weightInLbs = 25,
                 numberOfHorns = 2
             };
             Console.WriteLine($"Your new cat, {catInstance.name}, is {catInstance.weightInLbs}LBs.");
