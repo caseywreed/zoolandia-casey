@@ -8,7 +8,11 @@ namespace Zoolandia
         public int weightInLbs {get; set;}
         public static void sleep()
         {
-            Console.WriteLine("Animal is asleep!");
+            Console.WriteLine("The animal is asleep!");
+        }
+        public virtual void eat()
+        {
+            Console.WriteLine("The animal ate successfully");
         }
     }
 
