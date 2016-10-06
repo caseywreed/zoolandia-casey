@@ -22,9 +22,11 @@ namespace Zoolandia
                 numberOfHorns = 2
             };
             Console.WriteLine($"Your new cat, {catInstance.name}, is {catInstance.weightInLbs}LBs.");
-            // Console.WriteLine(catInstance.eat())
+            catInstance.eat();
             Console.WriteLine($"Your new fox, {foxInstance.name}, is {foxInstance.weightInLbs}LBs");
+            foxInstance.eat();
             Console.WriteLine($"Your new goat, {goatInstance.name}, is {goatInstance.weightInLbs}LBs");
+            goatInstance.eat();
         }
     }
 }

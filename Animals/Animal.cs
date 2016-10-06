@@ -12,7 +12,7 @@ namespace Zoolandia
         }
         public virtual void eat()
         {
-            Console.WriteLine("The animal ate successfully");
+            Console.WriteLine("The animal ate successfully\n");
         }
     }
 

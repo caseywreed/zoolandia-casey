@@ -15,7 +15,8 @@ namespace Zoolandia
         }
         public override void eat()
         {
-            Console.WriteLine("The cat is trying to eat its Fancy Feast.\n{base.eat()}");
+            Console.WriteLine("The cat is trying to eat its Fancy Feast.");
+            base.eat();
         }
     }
 
