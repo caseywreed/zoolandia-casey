@@ -8,8 +8,6 @@ namespace Zoolandia
         {
             return "Fennec Fox";
         }
-        public string speciesName {get;set;}
-        
         public override string speak()
         {
             return "Fox noise! Check out my ears!";

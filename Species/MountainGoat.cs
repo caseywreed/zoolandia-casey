@@ -2,10 +2,17 @@ using System;
 
 namespace Zoolandia
 {
-    public class MountainGoat
+    public class MountainGoat : Species
     {
-        public int mountainClimbRating {get;set;}
-        public bool canStandOnVerticalSurfaces {get;set;}
+        public override string getSpeciesName()
+        {
+            return "Mountain Goat";
+        }
+        public override string speak()
+        {
+            return "***YODELS LOUDLY***";
+        }
+
     }
 
 }

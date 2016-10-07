@@ -2,13 +2,17 @@ using System;
 
 namespace Zoolandia
 {
-    public class BritishAlpineGoat
+    public class BritishAlpineGoat : Species
     {
-        public bool hasBritishAccent {get; set;}
-        public static void pipPip()
+        public override string getSpeciesName()
         {
-            Console.WriteLine("Pip-pip, cheerio!");
+            return "British Alpine Goat";
         }
+        public override string speak()
+        {
+            return "Pip-pip, cheerio!";
+        }
+
     }
 
 }
