@@ -2,12 +2,11 @@ using System;
 
 namespace Zoolandia
 {
-    public class FennecFox : Fox
+    public class FennecFox : Species
     {
-        public bool hasPointyEars {get;set;}
-        public override void burrow()
+        public override string speak()
         {
-            Console.WriteLine($"The fox burrowed into its bundle of towels");
+            return "Fox noise! Check out my ears!";
         }
 
     }

@@ -2,7 +2,7 @@ using System;
 
 namespace Zoolandia
 {
-    public class OcelotCat : Cat
+    public class OcelotCat
     {
 
     }

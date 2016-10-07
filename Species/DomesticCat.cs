@@ -2,7 +2,7 @@ using System;
 
 namespace Zoolandia
 {
-    public class DomesticCat : Cat
+    public class DomesticCat
     {
 
     }
