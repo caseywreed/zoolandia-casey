@@ -4,6 +4,10 @@ namespace Zoolandia
 {
     public class DomesticCat : Species
     {
+        public DomesticCat ()
+        {
+            this.genus = new Cat();
+        }
         public override string getSpeciesName()
         {
             return "Domestic Shorthair Cat";

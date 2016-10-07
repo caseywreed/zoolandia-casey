@@ -4,6 +4,10 @@ namespace Zoolandia
 {
     public class ArcticFox : Species
     {
+        public ArcticFox ()
+        {
+            this.genus = new Fox();
+        }
         public override string getSpeciesName()
         {
             return "Arctic Fox";
