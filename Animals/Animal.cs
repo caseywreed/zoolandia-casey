@@ -7,7 +7,6 @@ namespace Zoolandia
         public string name {get; set;}
         public int weightInLbs {get; set;}
         public Species species {get; set;}
-        public Genus genus {get; set;}
         public virtual void sleep()
         {
             Console.WriteLine("The animal is asleep!");
