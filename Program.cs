@@ -7,21 +7,16 @@ namespace Zoolandia
         public static void Main(string[] args)
         {
             Animal animalInstance = new Animal();
-            Fox foxInstance = new Fox();
-            ArcticFox arcticFoxInstance = new ArcticFox();
+            Fox genus = new Fox();
+            ArcticFox species = new ArcticFox();
             // assign the genus and species to the ANIMAL instance
-            animalInstance.species = arcticFoxInstance;
-            animalInstance.genus = foxInstance;
+            animalInstance.genus = genus;
+            animalInstance.species = species;
             // Start assigning the more general animalInstance properties
             animalInstance.name = "Carl";
             animalInstance.weightInLbs = 15;
             
-            Console.WriteLine($"Your new fox, {animalInstance.name}, is {animalInstance.weightInLbs}LBs and has this sound: {animalInstance.species.speak()}");
-            // foxInstance.eat();
-            // Console.WriteLine($"Your new cat, {catInstance.name}, is {catInstance.weightInLbs}LBs.");
-            // catInstance.eat();
-            // Console.WriteLine($"Your new goat, {goatInstance.name}, is {goatInstance.weightInLbs}LBs");
-            // goatInstance.eat();
+            Console.WriteLine($"Your new {animalInstance.species.getSpeciesName()}, {animalInstance.name}, is {animalInstance.weightInLbs}LBs, is a member of the {animalInstance.genus.getGenus()} and has this sound: {animalInstance.species.speak()}");
         }
     }
 }
