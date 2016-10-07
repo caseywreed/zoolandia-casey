@@ -2,7 +2,7 @@ using System;
 
 namespace Zoolandia
 {
-    public class Fox : Animal
+    public class Fox
     {
         public Fox ()
         {
@@ -23,7 +23,7 @@ namespace Zoolandia
         }
         public string foxColor {get; set;}
 
-        public static void burrow()
+        public virtual void burrow()
         {
             Console.WriteLine($"The fox burrowed into its den");
         }
