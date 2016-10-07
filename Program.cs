@@ -7,38 +7,32 @@ namespace Zoolandia
     {
         public static void Main(string[] args)
         {
-            Animal animalInstance = new Animal();
-            Fox genus = new Fox();
-            ArcticFox species = new ArcticFox();
+            Animal animal1 = new Animal();
             // assign the genus and species to the ANIMAL instance
-            animalInstance.species = species;
-            animalInstance.species.genus = genus;
-            // Start assigning the more general animalInstance properties
-            animalInstance.name = "Carl";
-            animalInstance.weightInLbs = 15;
+            animal1.species = new ArcticFox();
+            animal1.species.genus = new Fox();
+            // Start assigning the more general animal1 properties
+            animal1.name = "Carl";
+            animal1.weightInLbs = 15;
 
             Animal animal2 = new Animal();
-            Fox genus2 = new Fox();
-            FennecFox species2 = new FennecFox();
             // assign the genus and species to the ANIMAL instance
-            animal2.species = species2;
-            animal2.species.genus = genus2;
+            animal2.species = new FennecFox();
+            animal2.species.genus = new Fox();
             // Start assigning the more general animal2 properties
             animal2.name = "Paul";
             animal2.weightInLbs = 8;
 
             Animal animal3 = new Animal();
-            Cat genus3 = new Cat();
-            DomesticCat species3 = new DomesticCat();
             // assign the genus and species to the ANIMAL instance
-            animal3.species = species3;
-            animal3.species.genus = genus3;
+            animal3.species = new DomesticCat();
+            animal3.species.genus = new Cat();
             // Start assigning the more general animal3 properties
             animal3.name = "Rosalita";
             animal3.weightInLbs = 10;
 
             List<Animal> pets = new List<Animal>();
-            pets.Add(animalInstance);
+            pets.Add(animal1);
             pets.Add(animal2);
             pets.Add(animal3);
 

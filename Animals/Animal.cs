@@ -7,13 +7,13 @@ namespace Zoolandia
         public string name {get; set;}
         public int weightInLbs {get; set;}
         public Species species {get; set;}
-        public virtual void sleep()
+        public virtual string sleep()
         {
-            Console.WriteLine("The animal is asleep!");
+           return "The animal is asleep!";
         }
-        public virtual void eat()
+        public virtual string eat()
         {
-            Console.WriteLine("The animal ate successfully\n");
+            return "The animal ate successfully";
         }
     }
 
