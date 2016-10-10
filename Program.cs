@@ -12,20 +12,8 @@ namespace Zoolandia
             animal1.name = "Carl";
             animal1.weightInLbs = 15;
 
-            Animal animal2 = new Animal();
-            animal2.species = new FennecFox();
-            animal2.name = "Paul";
-            animal2.weightInLbs = 8;
-
-            Animal animal3 = new Animal();
-            animal3.species = new DomesticCat();
-            animal3.name = "Rosalita";
-            animal3.weightInLbs = 10;
-
             List<Animal> pets = new List<Animal>();
             pets.Add(animal1);
-            pets.Add(animal2);
-            pets.Add(animal3);
 
             foreach (Animal animal in pets)
             {
