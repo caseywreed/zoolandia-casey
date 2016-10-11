@@ -15,6 +15,10 @@ namespace Zoolandia
         {
             return "The animal ate successfully";
         }
+        public virtual string speak()
+        {
+            return "Default noise";
+        } 
     }
 
 }

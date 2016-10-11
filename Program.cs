@@ -7,17 +7,26 @@ namespace Zoolandia
     {
         public static void Main(string[] args)
         {
-            Animal animal1 = new Animal();
-            animal1.species = new ArcticFox();
-            animal1.name = "Carl";
-            animal1.weightInLbs = 15;
+            
+            SingleArcticFox artie = new SingleArcticFox();
+            artie.name = "Artie";
+            artie.weightInLbs = 35;
+            artie.species = new ArcticFox();
+            Console.WriteLine(artie.walk());
+
+            SingleOcelotCat ossie = new SingleOcelotCat();
+            ossie.name = "Ossie";
+            ossie.weightInLbs = 200;
+            ossie.species = new OcelotCat();
+            Console.WriteLine(ossie.swim());
 
             List<Animal> pets = new List<Animal>();
-            pets.Add(animal1);
+            pets.Add(artie);
+            pets.Add(ossie);
 
             foreach (Animal animal in pets)
             {
-            Console.WriteLine($"Your new {animal.species.getSpeciesName()}, {animal.name}, is {animal.weightInLbs}LBs, a member of the {animal.species.genus.getGenus()} and has this sound: {animal.species.speak()}");
+                Console.WriteLine($"{animal.name}");
             }
             
         }
